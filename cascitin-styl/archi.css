@@ -6,3 +6,34 @@
   font-weight: 400;
   font-style: normal;
 }
+
+/* The shear allrun class style */
+.display_flax{
+  display: flex;
+}
+
+/* the shear caollor style*/
+.color-1-normal{
+  color: #131313;
+}
+.color-2-mid{
+  color: #424242;
+}
+
+/* Headder arrea banar site content */
+/* nabigition content calss */
+.navbar{
+  justify-content: space-between;
+}
+.banar{
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0%;
+}
+.link-item{
+  list-style: none;
+}
+.ankur{
+  text-decoration: none;
+  margin-right: 10px;
+}
