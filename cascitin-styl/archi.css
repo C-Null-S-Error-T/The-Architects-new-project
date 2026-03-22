@@ -16,13 +16,27 @@
   background-color: rgba(255, 14, 101, 0.1);
 }
 
+.main-class {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+main>section {
+  margin-top: 130px;
+}
+
 /* the shear caollor style*/
+
 .color-1-normal {
   color: #131313;
 }
 
 .color-2-mid {
   color: #424242;
+}
+
+.color-3-derkmid {
+  color: #727272;
 }
 
 /* Headder arrea banar site content */
@@ -49,32 +63,103 @@
 /* nav  is allrady complyted */
 .navbar,
 .banar-header {
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
 /* the banar text area content digine */
 .banar-text-content {
+  max-width: 868px;
   text-align: center;
-  width: 868px;
   margin: 0 auto;
+  margin-bottom: 50px;
 }
-.banar-tityle{
+
+.banar-tityle {
   font-size: 4rem;
   font-weight: 700;
 }
-.banar-discrip{
+
+.banar-discrip {
   font-size: 1rem;
   font-weight: 400;
 }
+
 /* the banar button in link */
-.button-primary{
+.button-primary {
   padding: 20px;
   border-radius: 6px;
   border: none;
   background-color: rgba(255, 144, 14, 1);
   color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
 }
-.heder_banar-pic{
+
+.heder_banar-pic {
   width: 100%;
+}
+
+
+/* this is the main section of the contente */
+.temms {
+  align-items: center;
+}
+
+.tem-img-conterar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.out-feache {
+  margin-left: 170px;
+  max-width: 537px;
+}
+
+.feacher-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+#number-1 {
+
+  font-weight: 500;
+}
+
+#number-3 {
+  color: #FF900E;
+}
+
+.feacher-detlse {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* respnsibe headder sit content */
+@media screen and (max-width: 576px) {
+
+  .navbar,
+  .link-list,
+  .temms {
+    flex-direction: column;
+  }
+  .tem-img-conterar{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .out-feache{
+    margin-left: 20px;
+  }
+
+}
+/* mide divise responsibe cascitin */
+@media screen and (min-width: 577px) and (max-width: 996px) {
+  .temms{
+    flex-direction: column;
+  }
+  .out-feache{
+    margin: 50px auto;
+  }
 }
